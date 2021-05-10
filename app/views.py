@@ -14,12 +14,16 @@ def emp(request):
     else:  
         form = appForm()  
     return render(request,'index.html',{'form':form})  
+
 def show(request):  
     apps = App.objects.all()  
     return render(request,"show.html",{'apps':apps})  
+
+
 def edit(request, id):  
     app = App.objects.get(id=id)  
     return render(request,'edit.html', {'app':app})  
+    
 def update(request, id):  
     app = App.objects.get(id=id)  
     form = appForm(request.POST, instance = app)  
