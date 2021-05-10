@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app'
 ]
 
 MIDDLEWARE = [
@@ -81,7 +82,7 @@ DATABASES = {
 
         'USER': 'postgres',
 
-        'PASSWORD': '123#passwordgso',
+        'PASSWORD':'123#passwordgso',
 
         'HOST': 'demo-database.cgsbqqh5gu6o.us-east-2.rds.amazonaws.com',
 
